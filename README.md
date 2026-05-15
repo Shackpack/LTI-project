@@ -31,7 +31,7 @@ Proyecto de aprendizaje para practicar estrategias de desarrollo con IA.
 
 ### 1. Clonar el repositorio
 ```bash
-git clone <repository-url>
+git clone https://github.com/Shackpack/LTI-project.git
 cd LTI-project
 ```
 
