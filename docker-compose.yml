@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15
+    container_name: lti-postgres
+    environment:
+      POSTGRES_DB: lti_db
+      POSTGRES_USER: lti_user
+      POSTGRES_PASSWORD: lti_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - lti-network
+
+volumes:
+  postgres_data:
+
+networks:
+  lti-network:
+    driver: bridge
